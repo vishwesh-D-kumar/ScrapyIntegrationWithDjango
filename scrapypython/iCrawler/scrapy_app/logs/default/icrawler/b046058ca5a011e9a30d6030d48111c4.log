@@ -1,0 +1,633 @@
+2019-07-13 19:01:59 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: scrapy_app)
+2019-07-13 19:01:59 [scrapy.utils.log] INFO: Versions: lxml 4.3.4.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 26 2018, 23:26:24) - [Clang 6.0 (clang-600.0.57)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Darwin-18.0.0-x86_64-i386-64bit
+2019-07-13 19:01:59 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs/default/icrawler/b046058ca5a011e9a30d6030d48111c4.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2019-07-13 19:01:59 [scrapy.extensions.telnet] INFO: Telnet Password: 5a8e752e137aef23
+2019-07-13 19:01:59 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-07-13 19:01:59 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-07-13 19:01:59 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-07-13 19:01:59 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2019-07-13 19:01:59 [scrapy.core.engine] INFO: Spider opened
+2019-07-13 19:01:59 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-07-13 19:01:59 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-07-13 19:02:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/robots.txt> (referer: None)
+2019-07-13 19:02:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/> (referer: None)
+2019-07-13 19:02:01 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'pro.imdb.com': <GET https://pro.imdb.com/login/ap?u=/login/lwa&imdbPageAction=signUp&rf=cons_nb_hm>
+2019-07-13 19:02:01 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'help.imdb.com': <GET https://help.imdb.com/imdb>
+2019-07-13 19:02:01 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'm.imdb.com': <GET https://m.imdb.com>
+2019-07-13 19:02:01 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'advertising.amazon.com': <GET https://advertising.amazon.com/lp/imdb>
+2019-07-13 19:02:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/news/celebrity> (referer: https://www.imdb.com/)
+2019-07-13 19:02:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/>
+{'url': 'https://www.imdb.com/'}
+2019-07-13 19:02:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/news/celebrity>
+{'url': 'https://www.imdb.com/news/celebrity'}
+2019-07-13 19:02:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/gallery/rg1641716480> (referer: https://www.imdb.com/)
+2019-07-13 19:02:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/festival-central/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/golden-globes/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/oscars/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/search/name/?birth_monthday=07-13&refine=birth_monthday> from <GET https://www.imdb.com/search/name?birth_monthday=07-13&refine=birth_monthday>
+2019-07-13 19:02:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/gallery/rg1641716480>
+{'url': 'https://www.imdb.com/gallery/rg1641716480'}
+2019-07-13 19:02:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/festival-central/>
+{'url': 'https://www.imdb.com/festival-central/'}
+2019-07-13 19:02:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/golden-globes/>
+{'url': 'https://www.imdb.com/golden-globes/'}
+2019-07-13 19:02:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/oscars/>
+{'url': 'https://www.imdb.com/oscars/'}
+2019-07-13 19:02:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/sundance/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/search/name/?gender=male,female> from <GET https://www.imdb.com/search/name?gender=male,female>
+2019-07-13 19:02:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/sundance/>
+{'url': 'https://www.imdb.com/sundance/'}
+2019-07-13 19:02:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/gallery/rg1624939264> (referer: https://www.imdb.com/)
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.audible.com> from <GET https://www.imdb.com/offsite/?page-action=ft-amzn-aud&token=BCYuy5VEM2ybr7331T5QlJdBqT8-R2q2TA9YnJetOZt2RR5sSfxY48k_bHJ8OY-Bk4S-b7Cy4FeV%0D%0A_L6H2qwiEgUFtgbHuzXh3T4bC7Aay0xcWHFK1AtLlKcYRVo1ikcL1UdNzumyeECf9XaqVNIS-fzb%0D%0ANt7iInTl6R1CA7wAQeAihug%0D%0A>
+2019-07-13 19:02:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/gallery/rg1624939264>
+{'url': 'https://www.imdb.com/gallery/rg1624939264'}
+2019-07-13 19:02:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/awards-central/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.dpreview.com> from <GET https://www.imdb.com/offsite/?page-action=ft-amzn-dpr&token=BCYlDmQrAuyTxT2LPY7MNt7di13FifzsQSbNOZPR4LAAgScm9--qoqidRRl0Atbkrfmrf3HdhOHP%0D%0AKgqJNVEwh5KQLPc0Rr2JVR3TRyQ5R-V3qvHVDB6XgcumdP4KTInZJIPOz6B21LbOyTpR1raM-39M%0D%0A6KGEXJJX6TQpzX6aqAuK1zg%0D%0A>
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.amazon.in/movies-tv-shows/b/?ie=UTF&node=976416031&tag=imdbpr1-in-21> from <GET https://www.imdb.com/offsite/?page-action=ft-amzn-in&token=BCYtDThPXPLnOZ-OBz-c14wgzuiEQORes_AcGVXIdsGixN0-axBuhftQ75W5jGTD4kb7kFHoEqkn%0D%0AVOyZ0YLs9kCJ74DfGZuIg8SV7dHXC6eJz25eQL1RQZ4swNcVm8YRTV6LVDpa9O5e4mza5Ma9-GqT%0D%0Ad-KUCCAB8JwjaBd6bTOs1LjmvIBGW1XCqXwKQn4O4PIATIFI2f241XiXK_i9wtg6THJL6CKuTB90%0D%0AquYmqcfoY5lp1OpZ07bTBLgzk1sDeQtp%0D%0A>
+2019-07-13 19:02:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/family-entertainment-guide/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.in/robots.txt> from <GET http://www.amazon.in/robots.txt>
+2019-07-13 19:02:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/awards-central/>
+{'url': 'https://www.imdb.com/awards-central/'}
+2019-07-13 19:02:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/originals/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/family-entertainment-guide/>
+{'url': 'https://www.imdb.com/family-entertainment-guide/'}
+2019-07-13 19:02:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/originals/>
+{'url': 'https://www.imdb.com/originals/'}
+2019-07-13 19:02:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/robots.txt> (referer: None)
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.amazon.fr/b?ie=UTF8&node=405322&tag=imdbpr1-fr-21> from <GET https://www.imdb.com/offsite/?page-action=ft-amzn-fr&token=BCYt7K0QGLSHtifaJ_BQctLCKVvek26XADcZmsPR0nXniDLjrHisvO5qHpq-S5z0vCqwDRPeovfp%0D%0AZPQXpgKb46LwT4E16P4N8F1yOL0IoFJ5pX_OW2USSL7Hcx6Ju7MNjeAxMlX1PWWdnrY3Mgos-yxW%0D%0A-f8WR-qhZd4rr_oQd-GZB5p1MTZjl3qX86DZhg231r1IXzyHpj_tMsMxevLuV2SDcbTx9isKZE5w%0D%0ACWBx0PC_aTo%0D%0A>
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.amazon.it/b?ie=UTF8&node=412606031&tag=imdbpr1-it-21> from <GET https://www.imdb.com/offsite/?page-action=ft-amzn-it&token=BCYlABxurBM1WcOHkPmQCw4Xj3GHhfwp_uyw_sao1ey4QwyCKPxpZ2xkSLAlqLE-hOUzPsSO48m0%0D%0AzmErElQXeF2yQxwLjqvyUgwkc_eEjF3yrX64HicSI6VTxBWyfnru4PHYTPkWsno9W8IMpao2Pcv-%0D%0A6VouVh68HbWghWdXYX9NvCgHSK3xICHLT2ckJitDRaszfZiGqw8H9XPjfDHYtHMoBqW-ocz9jNyC%0D%0AKZSpsRSbMeE%0D%0A>
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.amazon.de/b?ie=UTF8&node=284266&tag=imdbpr1-de-21> from <GET https://www.imdb.com/offsite/?page-action=ft-amzn-de&token=BCYg4GSFjbo9SFE2-SKeW-e9mu-Kx5uG5LprrA-8SQFazyiCw7q5LHKowZiKby09ySq3p4z2nExy%0D%0Afz5lG_TBpRVJagGFJZSDFE9-5-TkSHrh-tvj3PsnDw6WVeHUSoSlxwkMrMT7i9K5g6-fY9hOjz4L%0D%0AVfkcfGG0sAkULYWVo_jVAdXGhB963wUeSJOCqMemj7jWNQWH_B1BbYjH3NO6xVPA9yU8kGImnDt4%0D%0Ayak07yLWasg%0D%0A>
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.in/movies-tv-shows/b/?ie=UTF&node=976416031&tag=imdbpr1-in-21> from <GET http://www.amazon.in/movies-tv-shows/b/?ie=UTF&node=976416031&tag=imdbpr1-in-21>
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.de/robots.txt> from <GET http://www.amazon.de/robots.txt>
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.it/robots.txt> from <GET http://www.amazon.it/robots.txt>
+2019-07-13 19:02:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/gallery/rg1859820288> (referer: https://www.imdb.com/)
+2019-07-13 19:02:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.audible.com/robots.txt> (referer: None)
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.fr/robots.txt> from <GET http://www.amazon.fr/robots.txt>
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.amazon.co.uk/b?ie=UTF8&node=283926&tag=imdbpr1-uk-21> from <GET https://www.imdb.com/offsite/?page-action=ft-amzn-uk&token=BCYoaVcXTqzqLZUmGQW4ku0R06qJf7UAjOG8cN9QNHg_ig8Nnrp5dN6muNr7Aq0KvR4Ma60XgMyS%0D%0A60Y_W1kzNjydd7Ku3aEwPAEd8a-MZJUSwH32Yn1k5ZMR4VbWVWT4R8a4Wrqxj22QCWzjiIRYklEx%0D%0A_383CXXOXn8EzmbO7OUnuH2sR3SfS2sqP8C-lFhTY3Noxkv9HEYCTNgWCCK2QO7jBm9lyDiHc23H%0D%0A5HZ8ywHwvf0%0D%0A>
+2019-07-13 19:02:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/gallery/rg1859820288>
+{'url': 'https://www.imdb.com/gallery/rg1859820288'}
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.amazon.com/b?ie=UTF8&node=2676882011&tag=imdbpr1-20> from <GET https://www.imdb.com/offsite/?page-action=ft-piv&token=BCYuykw5W6qTOJloWgKc5B-27oT-3qUz1gZzO86CMNxxGi9CTJWR6DguAUHjynLSwKfGm0n7PnCZ%0D%0A5m-Do6CfPtMaiCCgmEqZFs7gTK2GHSlc-YppHX2_wkfKJBZMSsKWC_NPrXrIOjO2l2wkwpNRwVjz%0D%0AsOe0os_GhKlA_J6K3Fd-6KLU43NXwQiEwI89JocA06eZTGi-L6qmdVtbfdf_wAWlOesnEeKR_gyJ%0D%0AnZolbPuRGSk%0D%0A>
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.amazon.com/InterestBasedAds?tag=imdbtag_ft_iba-20> from <GET https://www.imdb.com/offsite/?page-action=ft-iba&token=BCYnDhsfUCwc_mj9-7dfihgPYEjut5d7oRr7QE9gRXmRBzmj4RcpQsqOjsVuRflq1z52z_GUmCIU%0D%0A96UEnkK0tDkrNx9xgugp9S6Q54NOuenhr2wW7mmFFLmB7xACYOwCsw2jlMPS5lZNCrYqC_eDQT3Y%0D%0AMnULFRhBUOnOPxqCs2mee4hSwZPoq7gfyWZ5iBa9-srrDseaDJ4V8WefP1Wqjsc0Yfg2YGsi6tzj%0D%0ApUgoZCyTJrc%0D%0A>
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.com/robots.txt> from <GET http://www.amazon.com/robots.txt>
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.dpreview.com:443/robots.txt> from <GET http://www.dpreview.com/robots.txt>
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.in/movies-tv-shows/b?ie=UTF8&node=976416031> from <GET https://www.amazon.in/movies-tv-shows/b/?ie=UTF&node=976416031&tag=imdbpr1-in-21>
+2019-07-13 19:02:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/search/name/?birth_monthday=07-13&refine=birth_monthday> (referer: https://www.imdb.com/)
+2019-07-13 19:02:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.audible.com/> from <GET http://www.audible.com>
+2019-07-13 19:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/name/nm1289434/?ref_=nv_cel_dflt_2> (referer: https://www.imdb.com/)
+2019-07-13 19:02:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/search/name/?birth_monthday=07-13&refine=birth_monthday>
+{'url': 'https://www.imdb.com/search/name/?birth_monthday=07-13&refine=birth_monthday'}
+2019-07-13 19:02:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/name/nm1289434/?ref_=nv_cel_dflt_2>
+{'url': 'https://www.imdb.com/name/nm1289434/?ref_=nv_cel_dflt_2'}
+2019-07-13 19:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.de/robots.txt> (referer: None)
+2019-07-13 19:02:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.de/b?ie=UTF8&node=284266&tag=imdbpr1-de-21> from <GET http://www.amazon.de/b?ie=UTF8&node=284266&tag=imdbpr1-de-21>
+2019-07-13 19:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/search/name/?gender=male,female> (referer: https://www.imdb.com/)
+2019-07-13 19:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.fr/robots.txt> (referer: None)
+2019-07-13 19:02:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.fr/b?ie=UTF8&node=405322&tag=imdbpr1-fr-21> from <GET http://www.amazon.fr/b?ie=UTF8&node=405322&tag=imdbpr1-fr-21>
+2019-07-13 19:02:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/search/name/?gender=male,female>
+{'url': 'https://www.imdb.com/search/name/?gender=male,female'}
+2019-07-13 19:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.it/robots.txt> (referer: None)
+2019-07-13 19:02:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.it/b?ie=UTF8&node=412606031&tag=imdbpr1-it-21> from <GET http://www.amazon.it/b?ie=UTF8&node=412606031&tag=imdbpr1-it-21>
+2019-07-13 19:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/name/nm1289434/?ref_=nv_cel_dflt_1> (referer: https://www.imdb.com/)
+2019-07-13 19:02:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.de/dvd-blu-ray-filme-3D-vhs-video/b?ie=UTF8&node=284266> from <GET https://www.amazon.de/b?ie=UTF8&node=284266&tag=imdbpr1-de-21>
+2019-07-13 19:02:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/name/nm1289434/?ref_=nv_cel_dflt_1>
+{'url': 'https://www.imdb.com/name/nm1289434/?ref_=nv_cel_dflt_1'}
+2019-07-13 19:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.co.uk/robots.txt> (referer: None)
+2019-07-13 19:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.com/robots.txt> (referer: None)
+2019-07-13 19:02:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.boxofficemojo.com/> from <GET https://www.imdb.com/offsite/?page-action=ft-mojo&token=BCYo5jZOptxgSW1aICZ3AJo-9mIZNZhaMHf6JBAi_pQfOY75Lhq4flUOjhsH4WhbSqiol-wY9u0O%0D%0AL1FzlTP3KurOvmhnf_yyELyAPNYMTaF-6Zq0_6rOcgx0DqQKXt96_eSzzEF6blxPJQFCAteo_Ec0%0D%0A8MMmEw9w42fz_P3IUiWAxGPpIMcQJP7Mgf-81rt3r5RZrDYylt0qWvBvI31AYQiwQw%0D%0A>
+2019-07-13 19:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/privacy> (referer: https://www.imdb.com/)
+2019-07-13 19:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/conditions> (referer: https://www.imdb.com/)
+2019-07-13 19:02:04 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.imdb.com/registration/login>
+2019-07-13 19:02:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.amazon.jobs/teams/imdb> from <GET https://www.imdb.com/jobs>
+2019-07-13 19:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dpreview.com:443/robots.txt> (referer: None)
+2019-07-13 19:02:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.it/dvd/b?ie=UTF8&node=412606031> from <GET https://www.amazon.it/b?ie=UTF8&node=412606031&tag=imdbpr1-it-21>
+2019-07-13 19:02:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.com/b?ie=UTF8&node=2676882011&tag=imdbpr1-20> from <GET http://www.amazon.com/b?ie=UTF8&node=2676882011&tag=imdbpr1-20>
+2019-07-13 19:02:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/privacy>
+{'url': 'https://www.imdb.com/privacy'}
+2019-07-13 19:02:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/conditions>
+{'url': 'https://www.imdb.com/conditions'}
+2019-07-13 19:02:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.in/movies-tv-shows/b?ie=UTF8&node=976416031> (referer: None)
+2019-07-13 19:02:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.fr/dvd-blu-ray-films/b?ie=UTF8&node=405322> from <GET https://www.amazon.fr/b?ie=UTF8&node=405322&tag=imdbpr1-fr-21>
+2019-07-13 19:02:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.in/movies-tv-shows/b?ie=UTF8&node=976416031>
+{'url': 'https://www.amazon.in/movies-tv-shows/b?ie=UTF8&node=976416031'}
+2019-07-13 19:02:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.imdb.com/news/top> from <GET https://www.imdb.com/news/>
+2019-07-13 19:02:05 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.imdb.com/news/top> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-07-13 19:02:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/search/> from <GET https://www.imdb.com/search>
+2019-07-13 19:02:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.boxofficemojo.com/robots.txt> from <GET http://www.boxofficemojo.com/robots.txt>
+2019-07-13 19:02:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.dpreview.com:443/> from <GET http://www.dpreview.com>
+2019-07-13 19:02:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.amazon.it/dvd/b?ie=UTF8&node=412606031> (failed 1 times): 503 Service Unavailable
+2019-07-13 19:02:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.co.uk/DVDs-Blu-ray-box-sets/b?ie=UTF8&node=283926> from <GET https://www.amazon.co.uk/b?ie=UTF8&node=283926&tag=imdbpr1-uk-21>
+2019-07-13 19:02:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.audible.com/> (referer: None)
+2019-07-13 19:02:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/pressroom/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://help.imdb.com/article/imdb/general-information/site-index/GNCX7BHNSPBTFALQ> from <GET https://www.imdb.com/a2z>
+2019-07-13 19:02:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dpreview.com:443/robots.txt> (referer: None)
+2019-07-13 19:02:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.audible.com/>
+{'url': 'https://www.audible.com/'}
+2019-07-13 19:02:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/pressroom/>
+{'url': 'https://www.imdb.com/pressroom/'}
+2019-07-13 19:02:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.com/gp/BIT/InternetBasedAds/ref=bit_portal_intad?tag=imdbtag_ft_iba-20> from <GET https://www.amazon.com/InterestBasedAds?tag=imdbtag_ft_iba-20>
+2019-07-13 19:02:05 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.amazon.it/dvd/b?ie=UTF8&node=412606031> (failed 2 times): 503 Service Unavailable
+2019-07-13 19:02:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://twitter.com/imdb> from <GET https://www.imdb.com/offsite/?page-action=fol_tw&token=BCYuT6uqObmLkUaIKCun1mxjBBXdyMnzc2S8dczgIl0A2tEHXkA1c1V9oDAZnzc9KBsBnsS5djH_%0D%0AJ8hTROyjI-uLLoXe-2Xl6sID8YKkbe52p7nf4uV0R4jq_-RpzvAEtof2p3A38wikH5_DpQcle5a3%0D%0AKS2UXkWUKSEEsPJzJph16e-WHh3L9gqmrhLKTM0bO_EH%0D%0A>
+2019-07-13 19:02:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.amazon.jobs/node/robots.txt?locale=en> from <GET https://www.amazon.jobs/robots.txt>
+2019-07-13 19:02:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://twitch.tv/IMDb/> from <GET https://www.imdb.com/offsite/?page-action=fol_twch&token=BCYqxeHdjaU0hjj5F76wqIE_4lZIYNv_AayEsM1NN0QGgJaq5TPE_w6_3eIVRv4HNpei089uDvj6%0D%0A0mTNaPnte94QIOz8UUsxlwu-K25EtEF-1sWVcIxTK_QN5K_9tzFnK0CPBVYHJAXVnhbDVLlsITkB%0D%0ADtMJLMV76v7bEfWm8ge7xbdtzsdecL-L5IFU_a6IwQEwMJ9k97KW7AS1MfvXqGFomw%0D%0A>
+2019-07-13 19:02:06 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET https://www.amazon.it/dvd/b?ie=UTF8&node=412606031> (failed 3 times): 503 Service Unavailable
+2019-07-13 19:02:06 [scrapy.core.engine] DEBUG: Crawled (503) <GET https://www.amazon.it/dvd/b?ie=UTF8&node=412606031> (referer: None)
+2019-07-13 19:02:06 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <503 https://www.amazon.it/dvd/b?ie=UTF8&node=412606031>: HTTP status code is not handled or not allowed
+2019-07-13 19:02:06 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.amazon.jobs/node/robots.txt?locale=en> (referer: None)
+2019-07-13 19:02:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/robots.txt> (referer: None)
+2019-07-13 19:02:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.dpreview.com:443/> (referer: None)
+2019-07-13 19:02:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.de/dvd-blu-ray-filme-3D-vhs-video/b?ie=UTF8&node=284266> (referer: None)
+2019-07-13 19:02:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.boxofficemojo.com/robots.txt> (referer: None)
+2019-07-13 19:02:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://youtube.com/IMDb/> from <GET https://www.imdb.com/offsite/?page-action=fol_yt&token=BCYjN7ha1DOvd9K_6OOZEUwVmXE1APhVbGJE-Qe5FOlieC_0aVIWlwzAtwrUIp6ueqnfOHOGB_a2%0D%0A6SW0mENgUJfLVX744nTUzUs7IN0KVmnPzBvMPWKQ3-ixFoiUn4KF9qKoOg6SpHpmvzH4NeHth57Y%0D%0AF6Jhik4blL2fRaU1OBycdDNtXrIPluDl-NDMm2btvtfBA3hoCLSJJ6IqgyGQc-qauQ%0D%0A>
+2019-07-13 19:02:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.dpreview.com:443/>
+{'url': 'https://www.dpreview.com:443/'}
+2019-07-13 19:02:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.de/dvd-blu-ray-filme-3D-vhs-video/b?ie=UTF8&node=284266>
+{'url': 'https://www.amazon.de/dvd-blu-ray-filme-3D-vhs-video/b?ie=UTF8&node=284266'}
+2019-07-13 19:02:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.amazon.jobs/en/teams/imdb> from <GET https://www.amazon.jobs/teams/imdb>
+2019-07-13 19:02:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://instagram.com/imdb/> from <GET https://www.imdb.com/offsite/?page-action=fol_inst&token=BCYu5AMSmBRWfruOR1_9835V_5wAgS1rKLA-9Yl_27hsKr31D-lcR7SfQcFx6HR37DLt_gMPOv4W%0D%0Ak0J9OE_PNVCnG2AF34aZVZF4jyTV1fzta5KBnaeGKWYUD5vCVpIch-8KNDqw-PKiA_rZNt_DAaya%0D%0APaj8hgUCyFl3G7oeceGjug1cxc5d_NwagW6iLsQQxIpX%0D%0A>
+2019-07-13 19:02:06 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://youtube.com/robots.txt> (referer: None)
+2019-07-13 19:02:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.facebook.com/imdb> from <GET https://www.imdb.com/offsite/?page-action=fol_fb&token=BCYnEkY02erfNcJMHMfS2NhaWGRWRZkvoBGH_yomn8JRp10nc5rO-WKFCvUl4Cn2DtsEzfTopBy1%0D%0AbavibTVK6Dn4Si47r3mILpjYbn7sIMPlVHUOtDJODp8uMXu__jppV3eE9uUb8WFz5uoZRba0dfAd%0D%0Ayxv3bZ9x6TRZvXug0zBi9jHmcRpRfBwSuAE5p8D4efUF8Hz_vNKblgJ3KD5LrCgZ0g%0D%0A>
+2019-07-13 19:02:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.com/gp/BIT/InternetBasedAds/ref=bit_portal_intad?tag=imdbtag_ft_iba-20> (referer: https://www.imdb.com/)
+2019-07-13 19:02:06 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.twitch.tv/robots.txt> from <GET https://twitch.tv/robots.txt>
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://www.amazon.com/IMDb-Mobile-LLC-Movies-TV/dp/B004GISARW/?amp&amp&amp&amp&amp&amp&amp&tag=imdb-fire-housead-20> from <GET https://www.imdb.com/offsite/?page-action=ft_app_amazon&token=BCYtB5IIXv11FdK3KN4uQfjaHn-TCuW-a1CXAuO8sA8SI1reeYBiiIwsP18tdKnSSQKBlduNzr8s%0D%0AocnfqTvQPdCAp0XdMWOUxToNVA6r_ArZTCvFBNn_5rtaHVvAYDt9ikdQheinic3KfJzBRLIAPavV%0D%0AxB9IH5HjxwZbf9kyQdwjE3B7I5crvcT1e_2zBSuz2fmhWPTqns_e5mCC2YZv2AocglVl5uubdsME%0D%0AYtmVTMkp7QbwCA_qScvJtV6hJLqhWP1GdtMYKGErvLCpOEmk718erA%0D%0A>
+2019-07-13 19:02:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.com/gp/BIT/InternetBasedAds/ref=bit_portal_intad?tag=imdbtag_ft_iba-20>
+{'url': 'https://www.amazon.com/gp/BIT/InternetBasedAds/ref=bit_portal_intad?tag=imdbtag_ft_iba-20'}
+2019-07-13 19:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.fr/dvd-blu-ray-films/b?ie=UTF8&node=405322> (referer: None)
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.boxofficemojo.com/> from <GET http://www.boxofficemojo.com/>
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.com/IMDb-Mobile-LLC-Movies-TV/dp/B004GISARW/?amp&amp&amp&amp&amp&amp&amp&tag=imdb-fire-housead-20> from <GET http://www.amazon.com/IMDb-Mobile-LLC-Movies-TV/dp/B004GISARW/?amp&amp&amp&amp&amp&amp&amp&tag=imdb-fire-housead-20>
+2019-07-13 19:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/imdb> (referer: https://www.imdb.com/)
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://market.android.com/details?id=com.imdb.mobile> from <GET https://www.imdb.com/offsite/?page-action=ft_app_google&token=BCYoT7oopU-5-_0FzmuKxISCVTyUq5eAJ2PVP8iCcPKPc1NXvrtSYXE7tAbGJrvVuiYy4j99Y0WS%0D%0A83-pAWx-ag_yDRyQXYtSKAEhjlzzgMadTPlNRPKFhf8-DQLtguVEWpniwyqQ9X4-uDKklPsB4Pkq%0D%0A28fznrIUTCyW5w-nF4K4tyeRT4GS_410VwY2VP56rXLMGrH8UiSwxFbyNNkJPr3Y0Q%0D%0A>
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.youtube.com/IMDb/> from <GET https://youtube.com/IMDb/>
+2019-07-13 19:02:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.fr/dvd-blu-ray-films/b?ie=UTF8&node=405322>
+{'url': 'https://www.amazon.fr/dvd-blu-ray-films/b?ie=UTF8&node=405322'}
+2019-07-13 19:02:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://twitter.com/imdb>
+{'url': 'https://twitter.com/imdb'}
+2019-07-13 19:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.facebook.com/robots.txt> (referer: None)
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.facebook.com/imdb>
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://itunes.apple.com/app/imdb-movies-tv/id342792525> from <GET https://www.imdb.com/offsite/?page-action=ft_app_apple&token=BCYn3_wNmbwmXDNkdIp9k50Rt0afYaQPIthv2cB6qJ4TKCNggxkct0S3toZD5rpQPNkbXt1YVZau%0D%0A7qSIkRc33R8tHeiyM3T_BjS6AVo2iePHNuYr5mOvd0-Gy0zR9t_fqRt1_0kim7a2NmpB12Kpmisu%0D%0ADd_iR_7pPVEdujgySzNCziThZbW0TOlKpQRJ4zs62s3K3qWEs__8H2476-2NxIV3X-GCYOVS-9ws%0D%0AklUMci0wyo4%0D%0A>
+2019-07-13 19:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://help.imdb.com/robots.txt> (referer: None)
+2019-07-13 19:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youtube.com/robots.txt> (referer: None)
+2019-07-13 19:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.boxofficemojo.com/> (referer: None)
+2019-07-13 19:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://itunes.apple.com/robots.txt> (referer: None)
+2019-07-13 19:02:07 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://market.android.com/robots.txt> (referer: None)
+2019-07-13 19:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.jobs/en/teams/imdb> (referer: https://www.imdb.com/)
+2019-07-13 19:02:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.boxofficemojo.com/>
+{'url': 'https://www.boxofficemojo.com/'}
+2019-07-13 19:02:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.jobs/en/teams/imdb>
+{'url': 'https://www.amazon.jobs/en/teams/imdb'}
+2019-07-13 19:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.co.uk/DVDs-Blu-ray-box-sets/b?ie=UTF8&node=283926> (referer: https://www.imdb.com/)
+2019-07-13 19:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://instagram.com/robots.txt> (referer: None)
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://instagram.com/imdb/>
+2019-07-13 19:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.twitch.tv/robots.txt> (referer: None)
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt7555774/> from <GET https://www.imdb.com/title/tt7555774>
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt3138122/> from <GET https://www.imdb.com/title/tt3138122>
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://apps.apple.com/app/imdb-movies-tv/id342792525> from <GET http://itunes.apple.com/app/imdb-movies-tv/id342792525>
+2019-07-13 19:02:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.co.uk/DVDs-Blu-ray-box-sets/b?ie=UTF8&node=283926>
+{'url': 'https://www.amazon.co.uk/DVDs-Blu-ray-box-sets/b?ie=UTF8&node=283926'}
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://play.google.com/store/apps/details?id=com.imdb.mobile> from <GET https://market.android.com/details?id=com.imdb.mobile>
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt10026172/> from <GET https://www.imdb.com/title/tt10026172>
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt5884004/> from <GET https://www.imdb.com/title/tt5884004>
+2019-07-13 19:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://help.imdb.com/article/imdb/general-information/site-index/GNCX7BHNSPBTFALQ> (referer: https://www.imdb.com/)
+2019-07-13 19:02:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt6105098/> from <GET https://www.imdb.com/title/tt6105098>
+2019-07-13 19:02:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.amazon.com/IMDb-Mobile-LLC-Movies-TV/dp/B004GISARW> from <GET https://www.amazon.com/IMDb-Mobile-LLC-Movies-TV/dp/B004GISARW/?amp&amp&amp&amp&amp&amp&amp&tag=imdb-fire-housead-20>
+2019-07-13 19:02:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt6139732/> from <GET https://www.imdb.com/title/tt6139732>
+2019-07-13 19:02:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://help.imdb.com/article/imdb/general-information/site-index/GNCX7BHNSPBTFALQ>
+{'url': 'https://help.imdb.com/article/imdb/general-information/site-index/GNCX7BHNSPBTFALQ'}
+2019-07-13 19:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://apps.apple.com/robots.txt> (referer: None)
+2019-07-13 19:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://play.google.com/robots.txt> (referer: None)
+2019-07-13 19:02:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt8350360/> from <GET https://www.imdb.com/title/tt8350360>
+2019-07-13 19:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.com/b?ie=UTF8&node=2676882011&tag=imdbpr1-20> (referer: None)
+2019-07-13 19:02:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.com/b?ie=UTF8&node=2676882011&tag=imdbpr1-20>
+{'url': 'https://www.amazon.com/b?ie=UTF8&node=2676882011&tag=imdbpr1-20'}
+2019-07-13 19:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/showtimes/title/tt8350360> (referer: https://www.imdb.com/)
+2019-07-13 19:02:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.twitch.tv/IMDb/> from <GET https://twitch.tv/IMDb/>
+2019-07-13 19:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/showtimes/title/tt8079248> (referer: https://www.imdb.com/)
+2019-07-13 19:02:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/showtimes/title/tt8350360>
+{'url': 'https://www.imdb.com/showtimes/title/tt8350360'}
+2019-07-13 19:02:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/showtimes/title/tt8079248>
+{'url': 'https://www.imdb.com/showtimes/title/tt8079248'}
+2019-07-13 19:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt3138122/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.twitch.tv/robots.txt> (referer: None)
+2019-07-13 19:02:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt3138122/>
+{'url': 'https://www.imdb.com/title/tt3138122/'}
+2019-07-13 19:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt7555774/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.youtube.com/IMDb/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt7555774/>
+{'url': 'https://www.imdb.com/title/tt7555774/'}
+2019-07-13 19:02:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.youtube.com/IMDb/>
+{'url': 'https://www.youtube.com/IMDb/'}
+2019-07-13 19:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://play.google.com/store/apps/details?id=com.imdb.mobile> (referer: https://www.imdb.com/)
+2019-07-13 19:02:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt8079248/> from <GET https://www.imdb.com/title/tt8079248>
+2019-07-13 19:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt5884004/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt6105098/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://play.google.com/store/apps/details?id=com.imdb.mobile>
+{'url': 'https://play.google.com/store/apps/details?id=com.imdb.mobile'}
+2019-07-13 19:02:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt5884004/>
+{'url': 'https://www.imdb.com/title/tt5884004/'}
+2019-07-13 19:02:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt6105098/>
+{'url': 'https://www.imdb.com/title/tt6105098/'}
+2019-07-13 19:02:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt1979376/> from <GET https://www.imdb.com/title/tt1979376>
+2019-07-13 19:02:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt6320628/> from <GET https://www.imdb.com/title/tt6320628>
+2019-07-13 19:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt10026172/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt6139732/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt10026172/>
+{'url': 'https://www.imdb.com/title/tt10026172/'}
+2019-07-13 19:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://apps.apple.com/app/imdb-movies-tv/id342792525> (referer: None)
+2019-07-13 19:02:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt6139732/>
+{'url': 'https://www.imdb.com/title/tt6139732/'}
+2019-07-13 19:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.amazon.com/IMDb-Mobile-LLC-Movies-TV/dp/B004GISARW> (referer: None)
+2019-07-13 19:02:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://apps.apple.com/app/imdb-movies-tv/id342792525>
+{'url': 'https://apps.apple.com/app/imdb-movies-tv/id342792525'}
+2019-07-13 19:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/showtimes/title/tt6320628> (referer: https://www.imdb.com/)
+2019-07-13 19:02:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/india/top-rated-tamil-movies/> from <GET https://www.imdb.com/india/top-rated-tamil-movies>
+2019-07-13 19:02:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.amazon.com/IMDb-Mobile-LLC-Movies-TV/dp/B004GISARW>
+{'url': 'https://www.amazon.com/IMDb-Mobile-LLC-Movies-TV/dp/B004GISARW'}
+2019-07-13 19:02:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/india/top-rated-malayalam-movies/> from <GET https://www.imdb.com/india/top-rated-malayalam-movies>
+2019-07-13 19:02:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/showtimes/title/tt6320628>
+{'url': 'https://www.imdb.com/showtimes/title/tt6320628'}
+2019-07-13 19:02:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.twitch.tv/IMDb/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.twitch.tv/IMDb/>
+{'url': 'https://www.twitch.tv/IMDb/'}
+2019-07-13 19:02:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/chart/boxoffice> (referer: https://www.imdb.com/)
+2019-07-13 19:02:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/india/top-rated-telugu-movies/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/chart/boxoffice>
+{'url': 'https://www.imdb.com/chart/boxoffice'}
+2019-07-13 19:02:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/india/top-rated-telugu-movies/>
+{'url': 'https://www.imdb.com/india/top-rated-telugu-movies/'}
+2019-07-13 19:02:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt8350360/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt8350360/>
+{'url': 'https://www.imdb.com/title/tt8350360/'}
+2019-07-13 19:02:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt8206760/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt7881524/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt8206760/>
+{'url': 'https://www.imdb.com/title/tt8206760/'}
+2019-07-13 19:02:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt7881524/>
+{'url': 'https://www.imdb.com/title/tt7881524/'}
+2019-07-13 19:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt1979376/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt1979376/>
+{'url': 'https://www.imdb.com/title/tt1979376/'}
+2019-07-13 19:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt7968456/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt7968456/>
+{'url': 'https://www.imdb.com/title/tt7968456/'}
+2019-07-13 19:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt8079248/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt7189494/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt8079248/>
+{'url': 'https://www.imdb.com/title/tt8079248/'}
+2019-07-13 19:02:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt7189494/>
+{'url': 'https://www.imdb.com/title/tt7189494/'}
+2019-07-13 19:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt9248972/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt9248972/>
+{'url': 'https://www.imdb.com/title/tt9248972/'}
+2019-07-13 19:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/india/top-rated-tamil-movies/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt8388508/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/india/top-rated-tamil-movies/>
+{'url': 'https://www.imdb.com/india/top-rated-tamil-movies/'}
+2019-07-13 19:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/india/top-rated-malayalam-movies/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt8388508/>
+{'url': 'https://www.imdb.com/title/tt8388508/'}
+2019-07-13 19:02:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt8869978/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/india/top-rated-malayalam-movies/>
+{'url': 'https://www.imdb.com/india/top-rated-malayalam-movies/'}
+2019-07-13 19:02:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt8869978/>
+{'url': 'https://www.imdb.com/title/tt8869978/'}
+2019-07-13 19:02:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt5662932/> from <GET https://www.imdb.com/title/tt5662932>
+2019-07-13 19:02:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt6320628/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt2855648/> from <GET https://www.imdb.com/title/tt2855648>
+2019-07-13 19:02:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/poll/p85VdzQ9QY4/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt9239882/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt6320628/>
+{'url': 'https://www.imdb.com/title/tt6320628/'}
+2019-07-13 19:02:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/poll/p85VdzQ9QY4/>
+{'url': 'https://www.imdb.com/poll/p85VdzQ9QY4/'}
+2019-07-13 19:02:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt9239882/>
+{'url': 'https://www.imdb.com/title/tt9239882/'}
+2019-07-13 19:02:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt6836936/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://getsatisfaction.com/imdb/topics/poll-suggestion-top-35-video-games-on-imdb> from <GET https://www.imdb.com/offsite/?page-action=offsite-getsatisfaction&token=BCYraCeYeBXJSYdSFpTsWLRgA8rFCCBhgOYEtBJLWcIESL19UzMudwOSGrEIGoSXC4me6mcIkxjm%0D%0AdCyLFPNsC0GHNE5cd59ggkSVGioP7DkTBszBq9kZSeakY8LJxDgeAo05P72esp3zJ_6GRtOn2V3J%0D%0A4TvrqOLZfhWx7kscDOfjerMtTGimfMvciBUf3qa0nf090CZjRGC6nWmZoR2G2e4bBl3EajpxaXMh%0D%0AIQKlQE9aEMkollNz_61KvW9pRI1q3Ab2%0D%0A>
+2019-07-13 19:02:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt0093578/> from <GET https://www.imdb.com/title/tt0093578>
+2019-07-13 19:02:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt8637428/> from <GET https://www.imdb.com/title/tt8637428>
+2019-07-13 19:02:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt9558468/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/name/nm5377144/> from <GET https://www.imdb.com/name/nm5377144>
+2019-07-13 19:02:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt6836936/>
+{'url': 'https://www.imdb.com/title/tt6836936/'}
+2019-07-13 19:02:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt9558468/>
+{'url': 'https://www.imdb.com/title/tt9558468/'}
+2019-07-13 19:02:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt7465992/> from <GET https://www.imdb.com/title/tt7465992>
+2019-07-13 19:02:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/comic-con/extreme-makeup-transformations/rg4258634496/mediaviewer/rm4255297536> (referer: https://www.imdb.com/)
+2019-07-13 19:02:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/title/tt2082197/> from <GET https://www.imdb.com/title/tt2082197>
+2019-07-13 19:02:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/comic-con/extreme-makeup-transformations/rg4258634496/mediaviewer/rm4255297536>
+{'url': 'https://www.imdb.com/comic-con/extreme-makeup-transformations/rg4258634496/mediaviewer/rm4255297536'}
+2019-07-13 19:02:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/comic-con/extreme-makeup-transformations/rg4258634496/mediaviewer/rm2104975616> (referer: https://www.imdb.com/)
+2019-07-13 19:02:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/comic-con/extreme-makeup-transformations/rg4258634496/mediaviewer/rm3038148864> (referer: https://www.imdb.com/)
+2019-07-13 19:02:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/comic-con/extreme-makeup-transformations/rg4258634496/mediaviewer/rm2104975616>
+{'url': 'https://www.imdb.com/comic-con/extreme-makeup-transformations/rg4258634496/mediaviewer/rm2104975616'}
+2019-07-13 19:02:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/comic-con/extreme-makeup-transformations/rg4258634496/mediaviewer/rm3038148864>
+{'url': 'https://www.imdb.com/comic-con/extreme-makeup-transformations/rg4258634496/mediaviewer/rm3038148864'}
+2019-07-13 19:02:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/name/nm2187603/> from <GET https://www.imdb.com/name/nm2187603>
+2019-07-13 19:02:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt2855648/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://getsatisfaction.com/robots.txt> (referer: None)
+2019-07-13 19:02:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt2855648/>
+{'url': 'https://www.imdb.com/title/tt2855648/'}
+2019-07-13 19:02:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt3104988/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt3104988/>
+{'url': 'https://www.imdb.com/title/tt3104988/'}
+2019-07-13 19:02:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/name/nm0001765/> from <GET https://www.imdb.com/name/nm0001765>
+2019-07-13 19:02:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/list/ls025720609/videoplayer/vi3104422425> (referer: https://www.imdb.com/)
+2019-07-13 19:02:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/list/ls025720609/videoplayer/vi3104422425>
+{'url': 'https://www.imdb.com/list/ls025720609/videoplayer/vi3104422425'}
+2019-07-13 19:02:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt0093578/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/name/nm0528331/> from <GET https://www.imdb.com/name/nm0528331>
+2019-07-13 19:02:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/comic-con/extreme-makeup-transformations/rg4258634496/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt0093578/>
+{'url': 'https://www.imdb.com/title/tt0093578/'}
+2019-07-13 19:02:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/comic-con/extreme-makeup-transformations/rg4258634496/>
+{'url': 'https://www.imdb.com/comic-con/extreme-makeup-transformations/rg4258634496/'}
+2019-07-13 19:02:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/name/nm3564817/> from <GET https://www.imdb.com/name/nm3564817>
+2019-07-13 19:02:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt5662932/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt7465992/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt5662932/>
+{'url': 'https://www.imdb.com/title/tt5662932/'}
+2019-07-13 19:02:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt7465992/>
+{'url': 'https://www.imdb.com/title/tt7465992/'}
+2019-07-13 19:02:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/search/name/?refine=birth_monthday&birth_monthday=7-14> from <GET https://www.imdb.com/search/name?refine=birth_monthday&birth_monthday=7-14>
+2019-07-13 19:02:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/name/nm0355097/> from <GET https://www.imdb.com/name/nm0355097>
+2019-07-13 19:02:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt8637428/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt8637428/>
+{'url': 'https://www.imdb.com/title/tt8637428/'}
+2019-07-13 19:02:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/name/nm5377144/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt2082197/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/name/nm5377144/>
+{'url': 'https://www.imdb.com/name/nm5377144/'}
+2019-07-13 19:02:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt2082197/>
+{'url': 'https://www.imdb.com/title/tt2082197/'}
+2019-07-13 19:02:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/news/ni62547735> (referer: https://www.imdb.com/)
+2019-07-13 19:02:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://getsatisfaction.com/imdb/topics/poll-suggestion-top-35-video-games-on-imdb> (referer: https://www.imdb.com/)
+2019-07-13 19:02:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/news/ni62547735>
+{'url': 'https://www.imdb.com/news/ni62547735'}
+2019-07-13 19:02:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/name/nm2187603/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://getsatisfaction.com/imdb/topics/poll-suggestion-top-35-video-games-on-imdb>
+{'url': 'https://getsatisfaction.com/imdb/topics/poll-suggestion-top-35-video-games-on-imdb'}
+2019-07-13 19:02:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/news/ni62547728> (referer: https://www.imdb.com/)
+2019-07-13 19:02:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/comic-con/photos-we-love/rg1641716480/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/name/nm2187603/>
+{'url': 'https://www.imdb.com/name/nm2187603/'}
+2019-07-13 19:02:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/news/ni62547728>
+{'url': 'https://www.imdb.com/news/ni62547728'}
+2019-07-13 19:02:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/comic-con/photos-we-love/rg1641716480/>
+{'url': 'https://www.imdb.com/comic-con/photos-we-love/rg1641716480/'}
+2019-07-13 19:02:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/name/nm0001765/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/name/nm0001765/>
+{'url': 'https://www.imdb.com/name/nm0001765/'}
+2019-07-13 19:02:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/comic-con/photos-we-love/rg1641716480/mediaviewer/rm2876611585> (referer: https://www.imdb.com/)
+2019-07-13 19:02:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/name/nm3564817/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/comic-con/photos-we-love/rg1641716480/mediaviewer/rm2876611585>
+{'url': 'https://www.imdb.com/comic-con/photos-we-love/rg1641716480/mediaviewer/rm2876611585'}
+2019-07-13 19:02:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/name/nm3564817/>
+{'url': 'https://www.imdb.com/name/nm3564817/'}
+2019-07-13 19:02:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt4154796/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/list/ls049940693/videoplayer/vi370850841> (referer: https://www.imdb.com/)
+2019-07-13 19:02:18 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.imdb.com/registration/signin?u=https%3A//www.imdb.com/>
+2019-07-13 19:02:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt4154796/>
+{'url': 'https://www.imdb.com/title/tt4154796/'}
+2019-07-13 19:02:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/list/ls049940693/videoplayer/vi370850841>
+{'url': 'https://www.imdb.com/list/ls049940693/videoplayer/vi370850841'}
+2019-07-13 19:02:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/search/name/?refine=birth_monthday&birth_monthday=7-14> (referer: https://www.imdb.com/)
+2019-07-13 19:02:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/name/nm0355097/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/search/name/?refine=birth_monthday&birth_monthday=7-14>
+{'url': 'https://www.imdb.com/search/name/?refine=birth_monthday&birth_monthday=7-14'}
+2019-07-13 19:02:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/name/nm0355097/>
+{'url': 'https://www.imdb.com/name/nm0355097/'}
+2019-07-13 19:02:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/comic-con/marvel-dc-cosplay/rg114662144/mediaviewer/rm2854896128> (referer: https://www.imdb.com/)
+2019-07-13 19:02:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/comic-con/marvel-dc-cosplay/rg114662144/mediaviewer/rm2854896128>
+{'url': 'https://www.imdb.com/comic-con/marvel-dc-cosplay/rg114662144/mediaviewer/rm2854896128'}
+2019-07-13 19:02:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/comic-con/marvel-dc-cosplay/rg114662144/mediaviewer/rm4024717568> (referer: https://www.imdb.com/)
+2019-07-13 19:02:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/comic-con/marvel-dc-cosplay/rg114662144/mediaviewer/rm4024717568>
+{'url': 'https://www.imdb.com/comic-con/marvel-dc-cosplay/rg114662144/mediaviewer/rm4024717568'}
+2019-07-13 19:02:19 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/trailers/> from <GET https://www.imdb.com/trailers>
+2019-07-13 19:02:19 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/comic-con/marvel-dc-cosplay/rg114662144/> from <GET https://www.imdb.com/comic-con/marvel-dc-cosplay/rg114662144>
+2019-07-13 19:02:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/list/ls049684270/videoplayer/vi2166078489> (referer: https://www.imdb.com/)
+2019-07-13 19:02:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/list/ls049684270/videoplayer/vi2166078489>
+{'url': 'https://www.imdb.com/list/ls049684270/videoplayer/vi2166078489'}
+2019-07-13 19:02:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt0076759/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt0944947/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt0076759/>
+{'url': 'https://www.imdb.com/title/tt0076759/'}
+2019-07-13 19:02:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt0944947/>
+{'url': 'https://www.imdb.com/title/tt0944947/'}
+2019-07-13 19:02:19 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://youtube.com/IMDb/> from <GET https://www.imdb.com/offsite/?page-action=fol_yt&token=BCYilpIU16KoAb0NqRNLjKlBpE_lp9UNas22cTpB4v9Lc7VvliIG4jitRwnCHSe2ASfbymJwUUNL%0D%0A8Pm4mcEVImU13tmDitA7q7NubIuy59-zODZKGCbqxsDq44ZQcaaqeAtBFra8MtBkP-e3iYHNeCa_%0D%0AgXya-waclYy2h1EJmhz8YZOFO6tIEJX6HdPcwptvNo9Zr7HFXVIgPWjSlVKhgTodGQ%0D%0A>
+2019-07-13 19:02:19 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://twitter.com/imdb> from <GET https://www.imdb.com/offsite/?page-action=fol_tw&token=BCYiAX6iT_ziksEhqt4ynjC1yOxsxUdV-iAW7ErHjf6niiGPdOxGxONvCbpqSeEpb2vZGfdGAla3%0D%0A1CURKlqtv8oiunPNKJOR9NyP4yh0HoR9e9dBQx2n4buKe6DuxnnReKEDssK3lTltndXQerO5hXBo%0D%0Al5c40-n4zCs85k0ng9qgUiXa0aE415i3J95DCnnG2hQ3%0D%0A>
+2019-07-13 19:02:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://twitch.tv/IMDb/> from <GET https://www.imdb.com/offsite/?page-action=fol_twch&token=BCYnLyPkhaCOKvpGWy94vXV31_LgGB7S8Tt3htybRKmu40xSXZogEe1x6XWwOw2mD5mcyNCgTz1g%0D%0Aw1kH6nx0gNppKjYg1K4K81OqhhenpwCXQS8e1PMR6N8eKbsz1NWg6yFYVkZN-3XFjSgE_kF3yOzy%0D%0ABfJIU2t--mBKbVDYAIDP2ktjkac13wOEVxXNOtSg3ff_e0woxSB3sMuT2f4d7EnGZw%0D%0A>
+2019-07-13 19:02:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://instagram.com/imdb/> from <GET https://www.imdb.com/offsite/?page-action=fol_inst&token=BCYrMvUdIWjdHz6FIx5Sasmle3aaEbfZR-UZsZQsttLe1oHTW3Hc9AkqFYC7MkuQFgkN1DiiAobk%0D%0AnBopfDIaV_gt7ovFf69ZbNV7CbOO_AgUl1YtTs_mmb2dzmb3jl-pKULVDOpyAtxJYnaBvxf_rvOi%0D%0AvGVHuXb2OOYsLZ6es5AD238m-ynoYsdJC-7ASNIrz66E%0D%0A>
+2019-07-13 19:02:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/list/ls049940693/videoplayer/vi926923801> (referer: https://www.imdb.com/)
+2019-07-13 19:02:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/list/ls049940693/videoplayer/vi926923801>
+{'url': 'https://www.imdb.com/list/ls049940693/videoplayer/vi926923801'}
+2019-07-13 19:02:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/list/ls025849840/videoplayer/vi186498073> (referer: https://www.imdb.com/)
+2019-07-13 19:02:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/name/nm0003620/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.facebook.com/imdb> from <GET https://www.imdb.com/offsite/?page-action=fol_fb&token=BCYsWDoqVTeGKAoSrcpKsqBrJ4jVQ08NitJj3lcLT3K1hvtK7SIWPLUT59-q65LP9Suqt-saCtDH%0D%0AdD8YP21hKcVx4i2v-e1KbDZcsYm97R-qzaG4PbWu_BmzqQTjMy7_K5p__kI_-9E3h1mArGSm0nLb%0D%0Aop2c8RLV4i3NTDAYfWoJ3dweGmlot9hvfwwRKj_c3E7fXS7ny49SV1xJ5yH-eGP89A%0D%0A>
+2019-07-13 19:02:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.imdb.com/registration/signin?u=https%3A%2F%2Fwww.imdb.com%2Flist%2Fwatchlist> from <GET https://www.imdb.com/list/watchlist>
+2019-07-13 19:02:20 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.imdb.com/registration/signin?u=https%3A%2F%2Fwww.imdb.com%2Flist%2Fwatchlist>
+2019-07-13 19:02:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/list/ls025849840/videoplayer/vi186498073>
+{'url': 'https://www.imdb.com/list/ls025849840/videoplayer/vi186498073'}
+2019-07-13 19:02:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/name/nm0003620/>
+{'url': 'https://www.imdb.com/name/nm0003620/'}
+2019-07-13 19:02:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/list/ls053181649/videoplayer/vi1411365913> (referer: https://www.imdb.com/)
+2019-07-13 19:02:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/list/ls053181649/videoplayer/vi1411365913>
+{'url': 'https://www.imdb.com/list/ls053181649/videoplayer/vi1411365913'}
+2019-07-13 19:02:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt4574334/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt4574334/>
+{'url': 'https://www.imdb.com/title/tt4574334/'}
+2019-07-13 19:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/news/indie> (referer: https://www.imdb.com/)
+2019-07-13 19:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/news/tv> (referer: https://www.imdb.com/)
+2019-07-13 19:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/poll/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/news/ni62547733> (referer: https://www.imdb.com/)
+2019-07-13 19:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/news/indie>
+{'url': 'https://www.imdb.com/news/indie'}
+2019-07-13 19:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/news/ni62546823> (referer: https://www.imdb.com/)
+2019-07-13 19:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/news/tv>
+{'url': 'https://www.imdb.com/news/tv'}
+2019-07-13 19:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/poll/>
+{'url': 'https://www.imdb.com/poll/'}
+2019-07-13 19:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/news/ni62547733>
+{'url': 'https://www.imdb.com/news/ni62547733'}
+2019-07-13 19:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/news/ni62546823>
+{'url': 'https://www.imdb.com/news/ni62546823'}
+2019-07-13 19:02:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://contribute.imdb.com/czone> from <GET https://www.imdb.com/czone/>
+2019-07-13 19:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/comic-con/marvel-dc-cosplay/rg114662144/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/news/ni62547738> (referer: https://www.imdb.com/)
+2019-07-13 19:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/comic-con/marvel-dc-cosplay/rg114662144/>
+{'url': 'https://www.imdb.com/comic-con/marvel-dc-cosplay/rg114662144/'}
+2019-07-13 19:02:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.imdb.com/tribeca> from <GET https://www.imdb.com/festival-central/tribeca>
+2019-07-13 19:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/news/ni62547738>
+{'url': 'https://www.imdb.com/news/ni62547738'}
+2019-07-13 19:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/event/all/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/news/movie> (referer: https://www.imdb.com/)
+2019-07-13 19:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/lafilmfest/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.imdb.com/festival-central/venice/> from <GET https://www.imdb.com/venice/>
+2019-07-13 19:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/event/all/>
+{'url': 'https://www.imdb.com/event/all/'}
+2019-07-13 19:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/news/movie>
+{'url': 'https://www.imdb.com/news/movie'}
+2019-07-13 19:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/news/top> (referer: https://www.imdb.com/)
+2019-07-13 19:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/lafilmfest/>
+{'url': 'https://www.imdb.com/lafilmfest/'}
+2019-07-13 19:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/news/top>
+{'url': 'https://www.imdb.com/news/top'}
+2019-07-13 19:02:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/whats-on-tv/> from <GET https://www.imdb.com/streaming/>
+2019-07-13 19:02:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/toronto/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/toronto/>
+{'url': 'https://www.imdb.com/toronto/'}
+2019-07-13 19:02:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/scary-good/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.imdb.com/festival-central/cannes/> from <GET https://www.imdb.com/cannes/>
+2019-07-13 19:02:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/scary-good/>
+{'url': 'https://www.imdb.com/scary-good/'}
+2019-07-13 19:02:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/amazon-originals/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.imdb.com/list/ls016522954/> from <GET https://www.imdb.com/sections/dvd/>
+2019-07-13 19:02:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://contribute.imdb.com/robots.txt> (referer: None)
+2019-07-13 19:02:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/amazon-originals/>
+{'url': 'https://www.imdb.com/amazon-originals/'}
+2019-07-13 19:02:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/emmys/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/comic-con/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/tribeca/> from <GET https://www.imdb.com/tribeca>
+2019-07-13 19:02:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/emmys/>
+{'url': 'https://www.imdb.com/emmys/'}
+2019-07-13 19:02:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/comic-con/>
+{'url': 'https://www.imdb.com/comic-con/'}
+2019-07-13 19:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/festival-central/venice/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/search/title/?count=100&groups=oscar_best_picture_winners&sort=year,desc> from <GET https://www.imdb.com/search/title?count=100&groups=oscar_best_picture_winners&sort=year,desc>
+2019-07-13 19:02:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/festival-central/venice/>
+{'url': 'https://www.imdb.com/festival-central/venice/'}
+2019-07-13 19:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/imdbpicks/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/whats-on-tv/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/imdbpicks/>
+{'url': 'https://www.imdb.com/imdbpicks/'}
+2019-07-13 19:02:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/whats-on-tv/>
+{'url': 'https://www.imdb.com/whats-on-tv/'}
+2019-07-13 19:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://contribute.imdb.com/czone> (referer: https://www.imdb.com/)
+2019-07-13 19:02:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.imdb.com/feature/genre/> from <GET https://www.imdb.com/genre/>
+2019-07-13 19:02:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://contribute.imdb.com/czone>
+{'url': 'https://contribute.imdb.com/czone'}
+2019-07-13 19:02:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.imdb.com/chart/boxoffice> from <GET https://www.imdb.com/chart/>
+2019-07-13 19:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/festival-central/cannes/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:24 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.imdb.com/india/top-rated-indian-movies/> from <GET https://www.imdb.com/india/top-rated-indian-movies>
+2019-07-13 19:02:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/festival-central/cannes/>
+{'url': 'https://www.imdb.com/festival-central/cannes/'}
+2019-07-13 19:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/chart/moviemeter> (referer: https://www.imdb.com/)
+2019-07-13 19:02:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/chart/moviemeter>
+{'url': 'https://www.imdb.com/chart/moviemeter'}
+2019-07-13 19:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/chart/tvmeter> (referer: https://www.imdb.com/)
+2019-07-13 19:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/calendar/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/chart/tvmeter>
+{'url': 'https://www.imdb.com/chart/tvmeter'}
+2019-07-13 19:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/tribeca/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/chart/top> (referer: https://www.imdb.com/)
+2019-07-13 19:02:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/calendar/>
+{'url': 'https://www.imdb.com/calendar/'}
+2019-07-13 19:02:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/tribeca/>
+{'url': 'https://www.imdb.com/tribeca/'}
+2019-07-13 19:02:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/chart/top>
+{'url': 'https://www.imdb.com/chart/top'}
+2019-07-13 19:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/movies-coming-soon/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/movies-coming-soon/>
+{'url': 'https://www.imdb.com/movies-coming-soon/'}
+2019-07-13 19:02:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/chart/top?ref_=nv_mv_dflt_3> (referer: https://www.imdb.com/)
+2019-07-13 19:02:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/chart/top?ref_=nv_mv_dflt_3>
+{'url': 'https://www.imdb.com/chart/top?ref_=nv_mv_dflt_3'}
+2019-07-13 19:02:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt0061512/?ref_=nv_mv_dflt_2> (referer: https://www.imdb.com/)
+2019-07-13 19:02:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt0061512/?ref_=nv_mv_dflt_2>
+{'url': 'https://www.imdb.com/title/tt0061512/?ref_=nv_mv_dflt_2'}
+2019-07-13 19:02:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/title/tt0061512/?ref_=nv_mv_dflt_1> (referer: https://www.imdb.com/)
+2019-07-13 19:02:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/feature/genre/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/title/tt0061512/?ref_=nv_mv_dflt_1>
+{'url': 'https://www.imdb.com/title/tt0061512/?ref_=nv_mv_dflt_1'}
+2019-07-13 19:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/showtimes/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/search/title/?count=100&groups=oscar_best_picture_winners&sort=year,desc> (referer: https://www.imdb.com/)
+2019-07-13 19:02:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/feature/genre/>
+{'url': 'https://www.imdb.com/feature/genre/'}
+2019-07-13 19:02:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/showtimes/>
+{'url': 'https://www.imdb.com/showtimes/'}
+2019-07-13 19:02:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/search/title/?count=100&groups=oscar_best_picture_winners&sort=year,desc>
+{'url': 'https://www.imdb.com/search/title/?count=100&groups=oscar_best_picture_winners&sort=year,desc'}
+2019-07-13 19:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/list/ls016522954/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/chart/toptv/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/list/ls016522954/>
+{'url': 'https://www.imdb.com/list/ls016522954/'}
+2019-07-13 19:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/india/top-rated-indian-movies/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/movies-in-theaters/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/search/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/chart/toptv/>
+{'url': 'https://www.imdb.com/chart/toptv/'}
+2019-07-13 19:02:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/india/top-rated-indian-movies/>
+{'url': 'https://www.imdb.com/india/top-rated-indian-movies/'}
+2019-07-13 19:02:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/movies-in-theaters/>
+{'url': 'https://www.imdb.com/movies-in-theaters/'}
+2019-07-13 19:02:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/search/>
+{'url': 'https://www.imdb.com/search/'}
+2019-07-13 19:02:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/name/nm0528331/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/name/nm0528331/>
+{'url': 'https://www.imdb.com/name/nm0528331/'}
+2019-07-13 19:02:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.imdb.com/trailers/> (referer: https://www.imdb.com/)
+2019-07-13 19:02:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.imdb.com/trailers/>
+{'url': 'https://www.imdb.com/trailers/'}
+2019-07-13 19:02:27 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-07-13 19:02:27 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 5,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 5,
+ 'downloader/request_bytes': 133349,
+ 'downloader/request_count': 268,
+ 'downloader/request_method_count/GET': 268,
+ 'downloader/response_bytes': 6350259,
+ 'downloader/response_count': 268,
+ 'downloader/response_status_count/200': 163,
+ 'downloader/response_status_count/301': 61,
+ 'downloader/response_status_count/302': 38,
+ 'downloader/response_status_count/404': 3,
+ 'downloader/response_status_count/503': 3,
+ 'dupefilter/filtered': 9,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 7, 13, 19, 2, 27, 593900),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/503': 1,
+ 'item_scraped_count': 139,
+ 'log_count/DEBUG': 418,
+ 'log_count/INFO': 10,
+ 'memusage/max': 68583424,
+ 'memusage/startup': 68579328,
+ 'offsite/domains': 4,
+ 'offsite/filtered': 5,
+ 'request_depth_max': 1,
+ 'response_received_count': 167,
+ 'retry/count': 2,
+ 'retry/max_reached': 1,
+ 'retry/reason_count/503 Service Unavailable': 2,
+ 'robotstxt/forbidden': 5,
+ 'robotstxt/request_count': 26,
+ 'robotstxt/response_count': 26,
+ 'robotstxt/response_status_count/200': 23,
+ 'robotstxt/response_status_count/404': 3,
+ 'scheduler/dequeued': 238,
+ 'scheduler/dequeued/memory': 238,
+ 'scheduler/enqueued': 238,
+ 'scheduler/enqueued/memory': 238,
+ 'start_time': datetime.datetime(2019, 7, 13, 19, 1, 59, 977845)}
+2019-07-13 19:02:27 [scrapy.core.engine] INFO: Spider closed (finished)

@@ -1,0 +1,25 @@
+2019-07-10 06:42:09 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: scrapy_app)
+2019-07-10 06:42:09 [scrapy.utils.log] INFO: Versions: lxml 4.3.4.0, libxml2 2.9.9, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 19.2.1, Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 26 2018, 23:26:24) - [Clang 6.0 (clang-600.0.57)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Darwin-18.0.0-x86_64-i386-64bit
+2019-07-10 06:42:09 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs/default/icrawler/d5d9a468a2dd11e9bb926030d48111c4.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2019-07-10 06:42:09 [scrapy.extensions.telnet] INFO: Telnet Password: aced9d0f4afd39d5
+2019-07-10 06:42:09 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-07-10 06:42:09 [twisted] CRITICAL: Unhandled error in Deferred:
+2019-07-10 06:42:09 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/crawler.py", line 79, in crawl
+    self.spider = self._create_spider(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/crawler.py", line 102, in _create_spider
+    return self.spidercls.from_crawler(self, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/spiders/crawl.py", line 100, in from_crawler
+    spider = super(CrawlSpider, cls).from_crawler(crawler, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 51, in from_crawler
+    spider = cls(*args, **kwargs)
+  File "/Users/vishweshdkumar/Desktop/PreCogApp/scrapypython/iCrawler/scrapy_app/scrapy_app/spiders/icrawler.py", line 16, in __init__
+    Rule(LinkExtractor(unique=True), callback='parse_item'),
+NameError: name 'Rule' is not defined
